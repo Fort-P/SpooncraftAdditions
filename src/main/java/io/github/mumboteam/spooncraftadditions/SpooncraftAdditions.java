@@ -3,6 +3,7 @@ package io.github.mumboteam.spooncraftadditions;
 import eu.pb4.playerdata.api.PlayerDataApi;
 import eu.pb4.polymer.resourcepack.api.PolymerResourcePackUtils;
 import io.github.mumboteam.spooncraftadditions.command.BlameGarethCommand;
+import io.github.mumboteam.spooncraftadditions.command.FixFlightCommand;
 import io.github.mumboteam.spooncraftadditions.command.IsItGarethsFaultCommand;
 import io.github.mumboteam.spooncraftadditions.component.ModComponents;
 import io.github.mumboteam.spooncraftadditions.loot.ModLootTables;
@@ -40,6 +41,7 @@ public class SpooncraftAdditions implements ModInitializer {
             BlameGarethCommand.register(dispatcher, "blamegareth", true);
             BlameGarethCommand.register(dispatcher, "forgivegareth", false);
             IsItGarethsFaultCommand.register(dispatcher);
+            FixFlightCommand.register(dispatcher);
         });
 
         ResourceLoader.get(ResourceType.SERVER_DATA).registerReloader(Identifier.of(SpooncraftAdditions.ID, "reward"), (SynchronousResourceReloader) Rewards::reload);
