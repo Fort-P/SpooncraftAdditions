@@ -1,33 +1,6 @@
 {
   "replace": false,
   "values": [
-    "spooncraftadditions:skyblock_hat",
-    "spooncraftadditions:netherite_skyblock_hat",
-    "spooncraftadditions:skyblock_starter_base_hat",
-    "spooncraftadditions:netherite_skyblock_starter_base_hat",
-    "spooncraftadditions:arrow_hat",
-    "spooncraftadditions:netherite_arrow_hat",
-    "spooncraftadditions:baltop_hat",
-    "spooncraftadditions:netherite_baltop_hat",
-    "spooncraftadditions:deep_void_sanctuary_hat",
-    "spooncraftadditions:netherite_deep_void_sanctuary_hat",
-    "spooncraftadditions:duck_hat",
-    "spooncraftadditions:netherite_duck_hat",
-    "spooncraftadditions:s5_spawn_hat",
-    "spooncraftadditions:windmill_house_hat",
-    "spooncraftadditions:tag_first",
-    "spooncraftadditions:tag_second",
-    "spooncraftadditions:tag_third",
-    "spooncraftadditions:tag_participation",
-    "spooncraftadditions:redstone_hat",
-    "spooncraftadditions:netherite_redstone_hat",
-    "spooncraftadditions:pirate_hat",
-    "spooncraftadditions:netherite_pirate_hat",
-    "spooncraftadditions:wreath",
-    "spooncraftadditions:netherite_wreath",
-    "spooncraftadditions:jester_hat",
-    "spooncraftadditions:netherite_jester_hat",
-    "spooncraftadditions:pumpkin_hat",
-    "spooncraftadditions:netherite_pumpkin_hat"
+    "#spooncraftadditions:hats"
   ]
 }

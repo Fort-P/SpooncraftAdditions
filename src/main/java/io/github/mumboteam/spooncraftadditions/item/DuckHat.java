@@ -11,16 +11,14 @@ import net.minecraft.world.item.BoatItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.item.equipment.ArmorMaterial;
-import net.minecraft.world.item.equipment.ArmorType;
 import net.minecraft.world.item.equipment.Equippable;
 import net.fabricmc.fabric.api.networking.v1.context.PacketContext;
 
 import java.util.List;
 
 public class DuckHat extends BoatItem implements PolymerItem {
-    public DuckHat(Properties settings, ArmorMaterial material, EntityType<DuckEntity> entityType) {
-        super(entityType, settings.humanoidArmor(material, ArmorType.HELMET).stacksTo(1).component(DataComponents.EQUIPPABLE, Equippable.builder(EquipmentSlot.HEAD).build()).overrideDescription("item.spooncraftadditions.duck_hat"));
+    public DuckHat(Properties settings, EntityType<DuckEntity> entityType) {
+        super(entityType, settings.stacksTo(1).component(DataComponents.EQUIPPABLE, Equippable.builder(EquipmentSlot.HEAD).build()).overrideDescription("item.spooncraftadditions.duck_hat"));
     }
 
     @Override

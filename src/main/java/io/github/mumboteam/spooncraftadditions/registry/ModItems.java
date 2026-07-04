@@ -18,8 +18,6 @@ import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.Unit;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
-import net.minecraft.world.item.equipment.ArmorMaterials;
-import net.minecraft.world.item.equipment.ArmorType;
 import net.minecraft.world.item.equipment.Equippable;
 import net.minecraft.world.level.block.Block;
 
@@ -38,40 +36,25 @@ public class ModItems {
     public static final Item CLAIM_SCROLL = register("claim_scroll", (settings -> new SimplePolymerItem(settings, Items.PAPER, true)));
     public static final Item CLAIM_CHECKER = register("claim_checker", (settings -> new SimplePolymerItem(settings, Items.PAPER, true)));
 
-    public static final Item SKYBLOCK_HAT = register("skyblock_hat", (settings) -> new Hat(settings.rarity(Rarity.UNCOMMON).durability(ArmorType.HELMET.getDurability(33)), "skyblock_hat", ArmorMaterials.DIAMOND));
-    public static final Item NETHERITE_SKYBLOCK_HAT = register("netherite_skyblock_hat", (settings) -> new Hat(settings.fireResistant().rarity(Rarity.UNCOMMON).durability(ArmorType.HELMET.getDurability(37)), "skyblock_hat", ArmorMaterials.NETHERITE));
-    public static final Item BALTOP_HAT = register("baltop_hat", (settings) -> new Hat(settings.rarity(Rarity.UNCOMMON).durability(ArmorType.HELMET.getDurability(33)), "baltop_hat", ArmorMaterials.DIAMOND));
-    public static final Item NETHERITE_BALTOP_HAT = register("netherite_baltop_hat", (settings) -> new Hat(settings.fireResistant().rarity(Rarity.EPIC).durability(ArmorType.HELMET.getDurability(37)), "baltop_hat", ArmorMaterials.NETHERITE));
-    public static final Item ARROW_HAT = register("arrow_hat", (settings) -> new Hat(settings.rarity(Rarity.UNCOMMON).durability(ArmorType.HELMET.getDurability(33)), "arrow_hat", ArmorMaterials.DIAMOND));
-    public static final Item NETHERITE_ARROW_HAT = register("netherite_arrow_hat", (settings) -> new Hat(settings.fireResistant().rarity(Rarity.EPIC).durability(ArmorType.HELMET.getDurability(37)), "arrow_hat", ArmorMaterials.NETHERITE));
-    public static final Item SKYBLOCK_STARTER_BASE_HAT = register("skyblock_starter_base_hat", (settings) -> new Hat(settings.rarity(Rarity.UNCOMMON).durability(ArmorType.HELMET.getDurability(33)), "skyblock_starter_base_hat", ArmorMaterials.DIAMOND));
-    public static final Item NETHERITE_SKYBLOCK_STARTER_BASE_HAT = register("netherite_skyblock_starter_base_hat", (settings) -> new Hat(settings.fireResistant().rarity(Rarity.EPIC).durability(ArmorType.HELMET.getDurability(37)), "skyblock_starter_base_hat", ArmorMaterials.NETHERITE));
-    public static final Item DEEP_VOID_SANCTUARY_HAT = register("deep_void_sanctuary_hat", (settings) -> new Hat(settings.rarity(Rarity.UNCOMMON).durability(ArmorType.HELMET.getDurability(33)), "deep_void_sanctuary_hat", ArmorMaterials.DIAMOND));
-    public static final Item NETHERITE_DEEP_VOID_SANCTUARY_HAT = register("netherite_deep_void_sanctuary_hat", (settings) -> new Hat(settings.fireResistant().rarity(Rarity.EPIC).durability(ArmorType.HELMET.getDurability(37)), "deep_void_sanctuary_hat", ArmorMaterials.NETHERITE));
-    public static final Item DUCK_HAT = register("duck_hat", (settings) -> new DuckHat(settings.rarity(Rarity.UNCOMMON).durability(ArmorType.HELMET.getDurability(33)), ArmorMaterials.DIAMOND, ModEntityTypes.DUCK));
-    public static final Item NETHERITE_DUCK_HAT = register("netherite_duck_hat", (settings) -> new DuckHat(settings.fireResistant().rarity(Rarity.EPIC).durability(ArmorType.HELMET.getDurability(37)), ArmorMaterials.NETHERITE, ModEntityTypes.NETHERITE_DUCK));
-    public static final Item S5_SPAWN_HAT = register("s5_spawn_hat", (settings) -> new Hat(settings.rarity(Rarity.UNCOMMON).durability(ArmorType.HELMET.getDurability(33)), "s5_spawn_hat", ArmorMaterials.DIAMOND)); //S5 starter base participation
-    public static final Item NETHERITE_S5_SPAWN_HAT = register("netherite_s5_spawn_hat", (settings) -> new Hat(settings.fireResistant().rarity(Rarity.EPIC).durability(ArmorType.HELMET.getDurability(37)), "s5_spawn_hat", ArmorMaterials.NETHERITE));
-    public static final Item WINDMILL_HOUSE_HAT = register("windmill_house_hat", (settings) -> new Hat(settings.rarity(Rarity.UNCOMMON).durability(ArmorType.HELMET.getDurability(33)), "windmill_house_hat", ArmorMaterials.DIAMOND));
-    public static final Item NETHERITE_WINDMILL_HOUSE_HAT = register("netherite_windmill_house_hat", (settings) -> new Hat(settings.fireResistant().rarity(Rarity.EPIC).durability(ArmorType.HELMET.getDurability(37)), "windmill_house_hat", ArmorMaterials.NETHERITE));
-    public static final Item TAG_FIRST = register("tag_first", (settings) -> new Hat(settings.rarity(Rarity.UNCOMMON).durability(ArmorType.HELMET.getDurability(33)), "tag_first", ArmorMaterials.DIAMOND));
-    public static final Item NETHERITE_TAG_FIRST = register("netherite_tag_first", (settings) -> new Hat(settings.fireResistant().rarity(Rarity.EPIC).durability(ArmorType.HELMET.getDurability(37)), "tag_first", ArmorMaterials.NETHERITE));
-    public static final Item TAG_SECOND = register("tag_second", (settings) -> new Hat(settings.rarity(Rarity.UNCOMMON).durability(ArmorType.HELMET.getDurability(33)), "tag_second", ArmorMaterials.DIAMOND));
-    public static final Item NETHERITE_TAG_SECOND = register("netherite_tag_second", (settings) -> new Hat(settings.fireResistant().rarity(Rarity.EPIC).durability(ArmorType.HELMET.getDurability(37)), "tag_second", ArmorMaterials.NETHERITE));
-    public static final Item TAG_THIRD = register("tag_third", (settings) -> new Hat(settings.rarity(Rarity.UNCOMMON).durability(ArmorType.HELMET.getDurability(33)), "tag_third", ArmorMaterials.DIAMOND));
-    public static final Item NETHERITE_TAG_THIRD = register("netherite_tag_third", (settings) -> new Hat(settings.fireResistant().rarity(Rarity.EPIC).durability(ArmorType.HELMET.getDurability(37)), "tag_third", ArmorMaterials.NETHERITE));
-    public static final Item TAG_PARTICIPATION = register("tag_participation", (settings) -> new Hat(settings.rarity(Rarity.UNCOMMON).durability(ArmorType.HELMET.getDurability(33)), "tag_participation", ArmorMaterials.DIAMOND));
-    public static final Item NETHERITE_TAG_PARTICIPATION = register("netherite_tag_participation", (settings) -> new Hat(settings.fireResistant().rarity(Rarity.EPIC).durability(ArmorType.HELMET.getDurability(37)), "tag_participation", ArmorMaterials.NETHERITE));
-    public static final Item REDSTONE_HAT = register("redstone_hat", (settings) -> new Hat(settings.rarity(Rarity.UNCOMMON).durability(ArmorType.HELMET.getDurability(33)), "redstone_hat", ArmorMaterials.DIAMOND));
-    public static final Item NETHERITE_REDSTONE_HAT = register("netherite_redstone_hat", (settings) -> new Hat(settings.fireResistant().rarity(Rarity.EPIC).durability(ArmorType.HELMET.getDurability(37)), "redstone_hat", ArmorMaterials.NETHERITE));
-    public static final Item PIRATE_HAT = register("pirate_hat", (settings) -> new Hat(settings.rarity(Rarity.UNCOMMON).durability(ArmorType.HELMET.getDurability(33)), "pirate_hat", ArmorMaterials.DIAMOND));
-    public static final Item NETHERITE_PIRATE_HAT = register("netherite_pirate_hat", (settings) -> new Hat(settings.fireResistant().rarity(Rarity.EPIC).durability(ArmorType.HELMET.getDurability(37)), "pirate_hat", ArmorMaterials.NETHERITE));
-    public static final Item WREATH_HAT = register("wreath", (settings) -> new Hat(settings.rarity(Rarity.UNCOMMON).durability(ArmorType.HELMET.getDurability(33)), "wreath", ArmorMaterials.DIAMOND));
-    public static final Item NETHERITE_WREATH_HAT = register("netherite_wreath", (settings) -> new Hat(settings.fireResistant().rarity(Rarity.EPIC).durability(ArmorType.HELMET.getDurability(37)), "wreath", ArmorMaterials.NETHERITE));
-    public static final Item JESTER_HAT = register("jester_hat", (settings) -> new Hat(settings.rarity(Rarity.UNCOMMON).durability(ArmorType.HELMET.getDurability(33)), "jester_hat", ArmorMaterials.DIAMOND));
-    public static final Item NETHERITE_JESTER_HAT = register("netherite_jester_hat", (settings) -> new Hat(settings.fireResistant().rarity(Rarity.EPIC).durability(ArmorType.HELMET.getDurability(37)), "jester_hat", ArmorMaterials.NETHERITE));
-    public static final Item PUMPKIN_HAT = register("pumpkin_hat", (settings) -> new Hat(settings.rarity(Rarity.UNCOMMON).durability(ArmorType.HELMET.getDurability(33)), "pumpkin_hat", ArmorMaterials.DIAMOND));
-    public static final Item NETHERITE_PUMPKIN_HAT = register("netherite_pumpkin_hat", (settings) -> new Hat(settings.fireResistant().rarity(Rarity.EPIC).durability(ArmorType.HELMET.getDurability(37)), "pumpkin_hat", ArmorMaterials.NETHERITE));
+    public static final Item COSMETIC_UPGRADE_SMITHING_TEMPLATE = register("cosmetic_upgrade_smithing_template", (settings -> new SimplePolymerItem(settings, Items.PAPER, true)));
+
+    public static final Item SKYBLOCK_HAT = register("skyblock_hat", (settings) -> new Hat(settings.rarity(Rarity.UNCOMMON), "skyblock_hat"));
+    public static final Item BALTOP_HAT = register("baltop_hat", (settings) -> new Hat(settings.rarity(Rarity.UNCOMMON), "baltop_hat"));
+    public static final Item ARROW_HAT = register("arrow_hat", (settings) -> new Hat(settings.rarity(Rarity.UNCOMMON), "arrow_hat"));
+    public static final Item SKYBLOCK_STARTER_BASE_HAT = register("skyblock_starter_base_hat", (settings) -> new Hat(settings.rarity(Rarity.UNCOMMON), "skyblock_starter_base_hat"));
+    public static final Item DEEP_VOID_SANCTUARY_HAT = register("deep_void_sanctuary_hat", (settings) -> new Hat(settings.rarity(Rarity.UNCOMMON), "deep_void_sanctuary_hat"));
+    public static final Item DUCK_HAT = register("duck_hat", (settings) -> new DuckHat(settings.rarity(Rarity.UNCOMMON), ModEntityTypes.DUCK));
+    public static final Item S5_SPAWN_HAT = register("s5_spawn_hat", (settings) -> new Hat(settings.rarity(Rarity.UNCOMMON), "s5_spawn_hat")); //S5 starter base participation
+    public static final Item WINDMILL_HOUSE_HAT = register("windmill_house_hat", (settings) -> new Hat(settings.rarity(Rarity.UNCOMMON), "windmill_house_hat"));
+    public static final Item TAG_FIRST = register("tag_first", (settings) -> new Hat(settings.rarity(Rarity.UNCOMMON), "tag_first"));
+    public static final Item TAG_SECOND = register("tag_second", (settings) -> new Hat(settings.rarity(Rarity.UNCOMMON), "tag_second"));
+    public static final Item TAG_THIRD = register("tag_third", (settings) -> new Hat(settings.rarity(Rarity.UNCOMMON), "tag_third"));
+    public static final Item TAG_PARTICIPATION = register("tag_participation", (settings) -> new Hat(settings.rarity(Rarity.UNCOMMON), "tag_participation"));
+    public static final Item REDSTONE_HAT = register("redstone_hat", (settings) -> new Hat(settings.rarity(Rarity.UNCOMMON), "redstone_hat"));
+    public static final Item PIRATE_HAT = register("pirate_hat", (settings) -> new Hat(settings.rarity(Rarity.UNCOMMON), "pirate_hat"));
+    public static final Item WREATH_HAT = register("wreath", (settings) -> new Hat(settings.rarity(Rarity.UNCOMMON), "wreath"));
+    public static final Item JESTER_HAT = register("jester_hat", (settings) -> new Hat(settings.rarity(Rarity.UNCOMMON), "jester_hat"));
+    public static final Item PUMPKIN_HAT = register("pumpkin_hat", (settings) -> new Hat(settings.rarity(Rarity.UNCOMMON), "pumpkin_hat"));
 
     public static final Item DRAGON_WINGS = register("dragon_wings", (settings -> new SimplePolymerItem(settings.durability(432).rarity(Rarity.EPIC).component(DataComponents.GLIDER, Unit.INSTANCE).component(DataComponents.EQUIPPABLE, Equippable.builder(EquipmentSlot.CHEST).setEquipSound(SoundEvents.ARMOR_EQUIP_ELYTRA).setAsset(ModEquipmentAssetKeys.DRAGON_WINGS).setDamageOnHurt(false).build()).repairable(Items.PHANTOM_MEMBRANE), Items.ELYTRA, true)));
     public static final Item KIRBY_WINGS = register("kirby_wings", (settings -> new SimplePolymerItem(settings.durability(432).rarity(Rarity.EPIC).component(DataComponents.GLIDER, Unit.INSTANCE).component(DataComponents.EQUIPPABLE, Equippable.builder(EquipmentSlot.CHEST).setEquipSound(SoundEvents.ARMOR_EQUIP_ELYTRA).setAsset(ModEquipmentAssetKeys.KIRBY_WINGS).setDamageOnHurt(false).build()).repairable(Items.PHANTOM_MEMBRANE), Items.ELYTRA, true)));

@@ -21,11 +21,6 @@ public class ModEntityTypes {
             EntityType.Builder.of(getDuckFactory(() -> ModItems.DUCK_HAT), MobCategory.MISC).sized(0.375F, 0.5625F)
     );
 
-    public static final EntityType<DuckEntity> NETHERITE_DUCK = register(
-            "netherite_duck",
-            EntityType.Builder.of(getDuckFactory(() -> ModItems.NETHERITE_DUCK_HAT), MobCategory.MISC).sized(0.375F, 0.5625F)
-    );
-
     public static <T extends Entity> EntityType<T> register(String path, EntityType.Builder<T> builder) {
         Identifier id = Identifier.fromNamespaceAndPath(SpooncraftAdditions.ID, path);
         EntityType<T> entityType =  Registry.register(BuiltInRegistries.ENTITY_TYPE, id, builder.build(ResourceKey.create(Registries.ENTITY_TYPE, id)));

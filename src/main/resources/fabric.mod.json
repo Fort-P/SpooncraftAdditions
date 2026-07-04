@@ -21,6 +21,9 @@
 	"entrypoints": {
 		"main": [
 			"io.github.mumboteam.spooncraftadditions.SpooncraftAdditions"
+		],
+		"fabric-datagen": [
+			"io.github.mumboteam.spooncraftadditions.datagen.SpooncraftAdditionsDataGenerator"
 		]
 	},
 	"mixins": [
