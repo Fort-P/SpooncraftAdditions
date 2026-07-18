@@ -43,7 +43,7 @@ public class EggBlock extends Block implements FactoryBlock {
 
     @Override
     public BlockState getPolymerBreakEventBlockState(BlockState state, PacketContext context) {
-        return Blocks.WHITE_WOOL.defaultBlockState();
+        return Blocks.WOOL.white().defaultBlockState();
     }
 
     @Override

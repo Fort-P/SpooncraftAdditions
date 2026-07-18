@@ -35,5 +35,14 @@ public class ModLootTables {
                 tableBuilder.withPool(poolBuilder);
             }
         });
+
+        LootTableEvents.MODIFY.register((key, tableBuilder, source, registries) -> {
+            if (source.isBuiltin() && (BuiltInLootTables.BURIED_TREASURE.equals(key))) {
+                LootPool.Builder poolBuilder = LootPool.lootPool()
+                        .when(LootItemRandomChanceCondition.randomChance(0.8F))
+                        .add(LootItem.lootTableItem(ModItems.COSMETIC_UPGRADE_SMITHING_TEMPLATE));
+                tableBuilder.withPool(poolBuilder);
+            }
+        });
     }
 }

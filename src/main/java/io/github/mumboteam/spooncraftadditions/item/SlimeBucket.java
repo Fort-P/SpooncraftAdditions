@@ -10,11 +10,8 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.EntitySpawnReason;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.entity.monster.Slime;
+import net.minecraft.world.entity.*;
+import net.minecraft.world.entity.monster.cubemob.Slime;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -78,7 +75,7 @@ public class SlimeBucket extends Item implements PolymerItem {
         if ((blockHitResult.getType() != HitResult.Type.BLOCK || !player.mayUseItemAt(blockHitResult.getBlockPos(), blockHitResult.getDirection(), stack) || player.swinging)) {
             return InteractionResult.PASS;
         } else {
-            Slime slime = EntityType.SLIME.create(world, EntitySpawnReason.BUCKET);
+            Slime slime = EntityTypes.SLIME.create(world, EntitySpawnReason.BUCKET);
             if (slime != null) {
                 slime.setSize(1, true);
                 slime.setPosRaw(pos.x, pos.y, pos.z);

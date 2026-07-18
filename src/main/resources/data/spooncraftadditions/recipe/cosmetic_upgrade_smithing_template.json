@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#O#",
+    "#C#",
+    "###"
+  ],
+  "key": {
+    "#": "minecraft:diamond",
+    "O": "spooncraftadditions:cosmetic_upgrade_smithing_template",
+    "C": "minecraft:cobblestone"
+  },
+  "result": {
+    "id": "spooncraftadditions:cosmetic_upgrade_smithing_template",
+    "count": 2
+  }
+}

@@ -124,6 +124,8 @@ public class ModItems {
                     entries.accept(CLAIM_SCROLL);
                     entries.accept(CLAIM_CHECKER);
 
+                    entries.accept(COSMETIC_UPGRADE_SMITHING_TEMPLATE);
+
                     entries.accept(SKYBLOCK_HAT);
                     entries.accept(BALTOP_HAT);
                     entries.accept(ARROW_HAT);
